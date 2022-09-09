@@ -15,7 +15,7 @@ export class AppComponent {
     user: User;
     title = 'Welcome to the App';
 
-    coreCourses: courseI = courses[0];
+    allCourses: Array<courseI> = courses;
 
     onCourseSelected(course: courseI) {
         console.log('onCourseSelected', course);

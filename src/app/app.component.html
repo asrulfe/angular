@@ -1,9 +1,12 @@
 <!-- main app container -->
 <div>
 
-  <app-card-course
-    [course]="coreCourses"
+  <app-card-course *ngFor="let course of allCourses; index as i; first as isFirst; last as isLast"
+    [class.is-first]="isFirst"
+    [class.is-last]="isLast"
+    [course]="course"
     (courseSelected)="onCourseSelected($event)"
+    [cardIndex]="i + 1"
     ></app-card-course>
 
   <!-- <router-outlet></router-outlet> -->

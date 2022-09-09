@@ -10,6 +10,9 @@ export class CardCourseComponent implements OnInit {
 
   @Input()
   course: courseI;
+
+  @Input()
+  cardIndex: number;
   
   @Output('courseSelected')
   courseEmmiter = new EventEmitter<courseI>();
