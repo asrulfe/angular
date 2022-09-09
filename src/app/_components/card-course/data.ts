@@ -1,4 +1,6 @@
-export const courses = [
+import { courseI } from "./card-course.model";
+
+export const courses: Array<courseI> = [
     {
       id: 1,
       description: 'ini course angular core',

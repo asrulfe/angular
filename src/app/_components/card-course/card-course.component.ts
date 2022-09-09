@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { courseI } from './card-course.model';
 
 @Component({
   selector: 'app-card-course',
@@ -8,13 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CardCourseComponent implements OnInit {
 
   @Input()
-  img: string;
-
-  @Input()
-  title: string;
-
-  @Input()
-  description: string;
+  course: courseI;
 
   constructor() { }
 

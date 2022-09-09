@@ -1,14 +1,14 @@
 <div class="courses">
   <div class="corse-card">
-    <h1>{{title}}</h1>
+    <h1>{{course.description}}</h1>
   </div>
   <img 
-    [src]="img" 
+    [src]="course.iconUrl" 
     alt="img"
     width="300"
     height="300" />
 
   <div class="course-description">
-    {{description}}
+    {{course.longDescription}}
   </div>
 </div>
