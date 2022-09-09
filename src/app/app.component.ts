@@ -16,6 +16,10 @@ export class AppComponent {
     title = 'Welcome to the App';
 
     coreCourses: courseI = courses[0];
+
+    onCourseSelected(course: courseI) {
+        console.log('onCourseSelected', course);
+    }
   
 
     constructor(private authenticationService: AuthenticationService) {
