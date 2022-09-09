@@ -1,10 +1,10 @@
 <!-- main app container -->
 <div>
 
-  <app-card-course></app-card-course>
-  <app-card-course></app-card-course>
-  <app-card-course></app-card-course>
-  <app-card-course></app-card-course>
+  <app-card-course
+    [title]="coreCourses.description"
+    [img]="coreCourses.iconUrl"
+    [description]="coreCourses.longDescription"></app-card-course>
 
   <!-- <router-outlet></router-outlet> -->
 </div>
