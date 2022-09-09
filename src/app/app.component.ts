@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { courseI } from './_components/card-course/card-course.model';
 import { courses } from './_components/card-course/data';
 import { Role } from './_models/role';
 import { User } from './_models/user';
@@ -14,9 +15,7 @@ export class AppComponent {
     user: User;
     title = 'Welcome to the App';
 
-    coreCourses = courses[0];
-    rxjsCourses = courses[1];
-    ngrxCourses = courses[2];
+    coreCourses: courseI = courses[0];
   
 
     constructor(private authenticationService: AuthenticationService) {
